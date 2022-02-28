@@ -1,0 +1,9 @@
+<p>ARE YOU SURE "{{task}}"</p>
+
+<a href="{% url 'home-page' %}">cancel</a>
+
+<form method="post", action="">
+    {% csrf_token %}
+
+    <input type="submit",name = "confirm">
+</form>
